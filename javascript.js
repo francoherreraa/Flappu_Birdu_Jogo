@@ -8,9 +8,9 @@ class Escena extends Phaser.Scene {
     preload() {
         resize();
         window.addEventListener('resize', resize, false);
-        this.load.image('fondo', '../img/espacio.jpg');
-        this.load.image('asteroides', '../img/asteroides.png');
-        this.load.spritesheet('heroe', '../img/heroe.png', {
+        this.load.image('fondo', 'img/espacio.jpg');
+        this.load.image('asteroides', 'img/asteroides.png');
+        this.load.spritesheet('heroe', 'img/heroe.png', {
             frameWidth: 50,
             frameHeight: 50
         });
@@ -22,13 +22,13 @@ class Escena extends Phaser.Scene {
         this.load.image('death2', 'img/death2.png');
         this.load.image('death3', 'img/death3.png');
 
-        this.load.image('pipe0', '../img/pipe0.png');
-        this.load.image('pipeAbajo0', '../img/pipeAbajo0.png');
-        this.load.image('pipeArriba0', '../img/pipeArriba0.png');
+        this.load.image('pipe0', 'img/pipe0.png');
+        this.load.image('pipeAbajo0', 'img/pipeAbajo0.png');
+        this.load.image('pipeArriba0', 'img/pipeArriba0.png');
 
-        this.load.image('pipe1', '../img/pipe1.png');
-        this.load.image('pipeAbajo1', '../img/pipeAbajo1.png');
-        this.load.image('pipeArriba1', '../img/pipeArriba1.png');
+        this.load.image('pipe1', 'img/pipe1.png');
+        this.load.image('pipeAbajo1', 'img/pipeAbajo1.png');
+        this.load.image('pipeArriba1', 'img/pipeArriba1.png');
 
     }
 
@@ -291,7 +291,7 @@ class PerderEscena extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('perder', '../img/perder-juego.jpg');
+        this.load.image('perder', 'img/perder-juego.jpg');
     }
 
 
